@@ -1,3 +1,10 @@
+# Progetto Analizzatore Energetico
+
+Questo progetto si occupa di calcolare il consumo energetico di un edificio, basandosi su dati catastali, APE (Attestato di Prestazione Energetica), BIM (Building Information Modeling), dati meteorologici e informazioni sulla produzione fotovoltaica. L'architettura è composta da vari microservizi containerizzati con Docker e orchestrati tramite Kubernetes.
+
+## Struttura del Progetto
+
+```plaintext
 project-root/
 │
 ├── services/
