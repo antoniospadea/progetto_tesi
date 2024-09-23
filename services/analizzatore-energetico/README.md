@@ -11,27 +11,24 @@ Il microservizio raccoglie i dati sui consumi e la produzione di energia da dive
 
 1. **Fabbisogno Termico**: Il fabbisogno termico viene calcolato in base alla differenza tra la temperatura interna e quella esterna, tenendo conto del coefficiente di isolamento dell'edificio e del fabbisogno di riscaldamento.
    
-   - Formula:
-     \
-     \[
-     	ext{Fabbisogno Termico} = rac{(T_{	ext{interna}} - T_{	ext{esterna}}) 	imes 	ext{Riscaldamento}}{	ext{Isolamento}}
-     \]
+   **Formula**:
+   ```
+   Fabbisogno Termico = (T_interna - T_esterna) * Riscaldamento / Isolamento
+   ```
    
 2. **Consumo Netto Elettrico**: Il consumo elettrico netto è dato dalla differenza tra il consumo elettrico totale e l'energia prodotta dall'impianto fotovoltaico.
    
-   - Formula:
-     \
-     \[
-     	ext{Consumo Netto Elettrico} = \max(	ext{Consumo Elettrico} - 	ext{Produzione Fotovoltaica}, 0)
-     \]
+   **Formula**:
+   ```
+   Consumo Netto Elettrico = max(Consumo Elettrico - Produzione Fotovoltaica, 0)
+   ```
 
 3. **Consumo Giornaliero Totale**: Somma del fabbisogno termico e del consumo netto elettrico.
    
-   - Formula:
-     \
-     \[
-     	ext{Consumo Giornaliero Totale} = 	ext{Fabbisogno Termico} + 	ext{Consumo Netto Elettrico}
-     \]
+   **Formula**:
+   ```
+   Consumo Giornaliero Totale = Fabbisogno Termico + Consumo Netto Elettrico
+   ```
 
 ## Struttura del Progetto
 
